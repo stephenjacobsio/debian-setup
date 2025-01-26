@@ -1,0 +1,29 @@
+# macOS
+.DS_Store
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs and temp files
+*.log
+*.tmp
+*.bak
+*.pid
+*.seed
+
+# System generated files
+Thumbs.db
+Desktop.ini
+
+# Miscellaneous
+*.out
+*.err
+*.rej
+*.orig
+*~
+*.old
+*.backup
+*.temp
