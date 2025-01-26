@@ -62,17 +62,17 @@ Installs the following essential tools and utilities:
 
 ### Step 1: Clone or Download the Script
 ```bash
-wget https://your-repo-link/setup_debian.sh
+wget https://github.com/stephenjacobsio/debian-setup/raw/main/debian_setup.sh
 ```
 
 ### Step 2: Make the Script Executable
 ```bash
-chmod +x setup_debian.sh
+chmod +x debian_setup.sh
 ```
 
 ### Step 3: Run the Script
 ```bash
-sudo ./setup_debian.sh
+sudo ./debian_setup.sh
 ```
 
 ---
@@ -96,7 +96,7 @@ The script is modular, making it easy to:
 
 To modify, open the script in a text editor:
 ```bash
-nano setup_debian.sh
+nano debian_setup.sh
 ```
 
 ---
