@@ -147,8 +147,10 @@ configure_timezone_locale() {
 
 run_health_checks() {
     log "Running post-install health checks..."
-    ufw status
-    docker --version
+    ufw status | grep "Status: active" || echo "UFW is not active."
+    docker --version || echo "Docker is not installed."
+    timedatectl | grep "Time zone" | grep "UTC" || echo "Timezone is not set to UTC."
+    locale | grep LANG | grep "en_US.UTF-8" || echo "Locale is not set to en_US.UTF-8."
     systemctl status docker | grep "Active: active"
 }
 
